@@ -1,0 +1,11 @@
+baseURL = "https://lotustella.com/"
+languageCode = "en"
+title = "Lotustella"
+enableRobotsTXT = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+
+[markup.goldmark.renderer]
+  unsafe = false

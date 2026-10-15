@@ -1,0 +1,32 @@
+:root {
+  --bg: #fbfaf7;
+  --fg: #22211f;
+  --muted: #6f6b64;
+  --accent: #3f6b5a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161716;
+    --fg: #e6e3dc;
+    --muted: #9a958c;
+    --accent: #8fbfa8;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0 auto;
+  max-width: 38rem;
+  padding: 2rem 1rem 4rem;
+  background: var(--bg);
+  color: var(--fg);
+  font: 1.0625rem/1.7 Georgia, "Iowan Old Style", "Noto Serif TC", serif;
+}
+a { color: var(--accent); }
+header.site { margin-bottom: 2.5rem; }
+header.site a { color: var(--fg); text-decoration: none; letter-spacing: 0.04em; }
+h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 0.25rem; }
+time, .status { color: var(--muted); font-size: 0.9rem; }
+.status { font-style: italic; }
+ul.posts { list-style: none; padding: 0; }
+ul.posts li { margin: 0.5rem 0; }
+ul.posts time { margin-left: 0.5rem; }
